@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Alireza Jafari</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <div class="profile-img">
+            <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Alireza Jafari</h1>
+        </a>
+
+        <div class="social-links text-center">
+            <a href="tel:+9111111" class="telephone"><i class="bi bi-telephone"></i></a>
+            <a href="mailto:alirezajafari28@gmail.com" class="gmail" target="_blank"><i class="bi bi-envelope"></i></a>
+            <a href="https://t.me/alrz_jfr" class="telegram" target="_blank"><i class="bi bi-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/alirezajafari93" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+                <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+                <li class="dropdown"><a href="#portfolio"><i class="bi bi-menu-button navicon"></i> <span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="#Ultrasonography">Ultrasonography</a></li>
+                        <li><a href="#ARINCLogger">ARINC 429</a></li>
+                        <li><a href="#DigitalCluster">Digital Instrument Cluster</a></li>
+                        <li><a href="#HMIDesktop">HMIDesktop</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+
+            <img src="assets/img/backGroundTexture.jpg" alt="" data-aos="fade-in" class="">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <h2>Alireza Jafari</h2>
+                <p>I'm <span class="typed" data-typed-items="a Software Developer, a Freelancer,an Electrical Engineer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink
+               " aria-hidden="true"></span></p>
+
+                <a href="assets/download/ALIREZA JAFARI.pdf" download class="button-link-download">Download Resume</a>
+
+            </div>
+
+        </section>
+        <!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>About</h2>
+                <p>As a software developer with over <b> <span id="experienceYrID"></span></b> years of experience, I have collaborated with various companies on diverse projects across multiple fields and platforms. I specialize in <b>C++</b> development,
+                    including modern C++ standards, and have strong expertise in <b>Qt</b> and <b>QML</b>.</p>
+                <script>
+                    window.onload = function() {
+                        const startyear = 2019;
+                        const currentYear = new Date().getFullYear();
+                        const expYr = currentYear - startyear;
+                        document.getElementById("experienceYrID").textContent = expYr;
+                        document.getElementById("experienceYrID2").textContent = "+" + expYr;
+                    };
+                </script>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 content">
+                        <h2>Software Developer.</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://www.alirezajafari.ir" target="_blank">www.alirezajafari.ir</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>github:</strong> <a href="https://github.com/arjafari93" target="_blank">github.com/arjafari93</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+*****</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Melbourne, Australia</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master Of Science</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>alirezajafari28@gmail.com</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Full-time:</strong> <span>Available</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+        <!-- /About Section -->
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section light-background">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Skills</h2>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row skills-content skills-animation">
+                    <h3 style="font-weight: bold;">Proficiency In:</h3>
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill"><span>C++11/14/17</span> <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                        <div class="progress">
+                            <span class="skill"><span>Qt Framework</span> <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill"><span>QML</span> <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                        <div class="progress">
+                            <span class="skill"><span>Version Control(git/GitHub/GitLab)</span> <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="row skills-content skills-animation familiarSkills" style="margin-top: 35px;">
+                    <h3 style="font-weight: bold;">Familiar With:</h3>
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill"><span>Linux(UserSpace)</span> <i class="val">60%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                        <div class="progress">
+                            <span class="skill"><span>JavaScript</span> <i class="val">40%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                        <div class="progress">
+                            <span class="skill"><span>HTML/CSS</span> <i class="val">30%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill"><span>Matlab</span> <i class="val">30%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                        <div class="progress">
+                            <span class="skill"><span>Unit Testing (Google Test - gTest)</span> <i class="val">50%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- End Skills Item -->
+
+                    </div>
+
+                </div>
+                <div class="row skills-content skills-animation familiarSkills" style="margin-top: 35px;">
+                    <h4 style="font-weight: bold;">Adaptable Skills:</h4>
+                    <p>SQLite, C++20, gRPC, winRPC, Named Pipe, linux D-Bus, ZMQ, Socket Programming, QWidget, Linux Kernel Space, linux build systems (BuildRoot), Qt-Wayland, Node.Js, Android, Node.js, GLSL, google test gMock, </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- /Skills Section -->
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Resume</h2>
+                <p>Experienced software engineer with a proven record of developing robust, scalable, and high-performance applications. Proficient in multiple programming languages and frameworks. Adept at collaborating with cross-functional teams to deliver
+                    innovative solutions. Seeking to leverage expertise in full-stack development to drive technological advancement..</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="resume-title">Sumary</h3>
+
+                        <div class="resume-item pb-0">
+                            <h4>Alireza Jafari</h4>
+                            <p><em>Innovative Software Developer with <span id="experienceYrID2"></span> years of experience designing and developing software in different platforms.</em></p>
+                            <ul>
+                                <li>Melbourne, Australia</li>
+                                <li>+******</li>
+                                <li>alirezajafari28@gmail.com</li>
+                            </ul>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Master of Science: Electrical Engineering - <b>Digital Electronics</b></h4>
+                            <h5>2016 - 2018</h5>
+                            <p><em>Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran </em></p>
+                            <p>Thesis title: Video Stabilization And Image Enhancement</p>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Bachelor of Science: Electrical Engineering - <b>Telecommunications</b></h4>
+                            <h5>2011 - 2015</h5>
+                            <p><em>Isfahan University Of Technology, Isfahan, Iran</em></p>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Graph Inc.</h4>
+                            <h5>Sep 2024 - Jan 2025 (full time) </h5>
+                            <!-- <p><em>Tehran - Iran</em></p> -->
+                            <ul>
+                                <li>Worked as part of a professional <b>C++</b> team developing a <b>Windows EDR</b> (Endpoint Detection and Response) solution.</li>
+                                <li>Identified and fixed critical bugs, ensuring stability and reliability.</li>
+                                <li>Developed and integrated new features to enhance the product. </li>
+                                <li>Optimized performance to improve efficiency and reduce system resource usage. </li>
+                            </ul>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>Med Fanavaran Plus</h4>
+                            <h5>Feb 2024 – Apr 2025 (part time)</h5>
+                            <!-- <p><em>Tehran - Iran</em></p> -->
+                            <ul>
+                                <li>Member of a team developing an ultrasound imaging device.</li>
+                                <li>Involved in the design and development of various software functionalities.</li>
+                                <li>Responsibilities include:
+                                    <ul>
+                                        <li>Developing measurements and touch panel functionalities.</li>
+                                        <li>Contributing to the overall software architecture and design.</li>
+                                    </ul>
+                                    <li>Using<b>Qt C++ </b> and <b>QML</b> extensively for development, with the core application running on Qt Widgets.</li>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+                        <div class="resume-item">
+                            <h4>PIARAZ</h4>
+                            <h5>Dec 2023 – May 2024 (contractor) </h5>
+                            <!-- <p><em>Tehran - Iran</em></p> -->
+                            <ul>
+                                <li>Designed and developed a comprehensive software solution for existing hardware (<b>ARINC 429 logger</b>) used in the avionics industry and commercial airplanes.
+                                </li>
+                                <li>Enabled hardware connectivity, IO control, and data capture/display with extensive additional functionalities.</li>
+                                <li>Utilized <b>Qt</b> QML/WebEngine and <b>C++</b> as primary technologies</li>
+                                <li>Developed 50+ packet parsers to process received packets and display real-time parameter information.</li>
+                            </ul>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+
+                        <div class="resume-item">
+                            <h4>DevSpec</h4>
+                            <h5>Dec 2018 – Dec 2023 (full time)</h5>
+                            <!-- <p><em>Tehran-Iran</em></p> -->
+                            <ul>
+                                <li>Primarily develop software using <b>Qt C++ and QML</b>, focusing on user-space applications for devices running <b>embedded Linux</b>.</li>
+                                <li>Mostly worked with embedded Linux platforms, focusing on low-cost ARM-based SoCs, while also gaining experience with desktop environments on both Windows and Linux </li>
+                                <li>Involved in projects requiring additional skills in HTML/CSS, Node.js ... </li>
+                            </ul>
+                        </div>
+                        <!-- Edn Resume Item -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Resume Section -->
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section light-background">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Notable Projects</h2>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    <div class="col-lg-12 portfolio-item isotope-item filter-app project" data-aos="fade-up">
+                        <div id="Ultrasonography" class="project-wrap row">
+
+                            <div class="portfolio-details-slider swiper init-swiper col-lg-3 col-md-4 col-sm-6">
+
+                                <script type="application/json" class="swiper-config">
+                                    {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                            "delay": 5000
+                                        },
+                                        "slidesPerView": "auto",
+                                        "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "type": "bullets",
+                                            "clickable": true
+                                        }
+                                    }
+                                </script>
+
+                                <div class="swiper-wrapper align-items-center">
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/UltraSound/ultrasound0.png" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/UltraSound/ultrasound1.png" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/UltraSound/ultrasound2.png" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/UltraSound/ultrasound3.png" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/UltraSound/ultrasound4.png" width="100%" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+
+
+                            <!-- <img src="assets/img/HMIShell/hmiLauncherApp.PNG" class="project-img" alt=""> -->
+                            <div class="project-text col-lg-9 col-md-8 col-sm-6">
+                                <h3> Ultrasonography (2025)</h3>
+                                <p>I worked as a <b>C++</b> developer on an <b>ultrasound sonography</b> imaging machine, using <b>Qt</b> and <b>QML</b> for UI and system development. My responsibilities included measurements, touch panel and system integration.
+                                    I developed over <b>500</b> measurement tools, including spline, trace, ellipses, angles, volume, and numerous application-specific calculations, solving complex mathematical problems to ensure accurate results. Additionally,
+                                    I designed and built a custom <b>virtual keyboard</b> from scratch, featuring multiple pages, body labels, body markers, multilingual support, and various advanced functionalities. To enhance precision, I developed
+                                    a magnifier tool that allowed doctors to place points with high accuracy. The measurements and most GUI elements were inspired by the latest Philips ultrasound imaging sonography machines, ensuring a modern and intuitive
+                                    user experience. I also contributed to various other features that improved the overall functionality and usability of the system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-12 portfolio-item isotope-item filter-app project" data-aos="fade-up">
+                        <div id="ARINCLogger" class="project-wrap row">
+
+                            <div class="portfolio-details-slider swiper init-swiper col-lg-3 col-md-4 col-sm-6">
+
+                                <script type="application/json" class="swiper-config">
+                                    {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                            "delay": 5000
+                                        },
+                                        "slidesPerView": "auto",
+                                        "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "type": "bullets",
+                                            "clickable": true
+                                        }
+                                    }
+                                </script>
+
+                                <div class="swiper-wrapper align-items-center">
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Arinc429/arinc0.JPG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Arinc429/arinc1.JPG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Arinc429/arinc2.JPG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Arinc429/arinc3.JPG" width="100%" alt="">
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+
+
+                            <!-- <img src="assets/img/HMIShell/hmiLauncherApp.PNG" class="project-img" alt=""> -->
+                            <div class="project-text col-lg-9 col-md-8 col-sm-6">
+                                <h3>Avionics ARINC 429 Logger (2022)</h3>
+                                <p>I developed a Windows-based software solution for hardware designed to capture and analyze <b>ARINC 429</b> data, using <b>Qt C++, QML, and the Modbus TCP protocol</b> for communication. The software connected to the hardware,
+                                    which was integrated into commercial aircraft facilities, enabling it to capture ARINC 429 packets and transmit them back for real-time analysis. It supported bi-directional communication, allowing users to configure
+                                    the hardware, send essential commands, and manage data transmission. The software featured a real-time packet parser with over <b>50 ARINC 429 parsers</b>, enabling users to view critical parameters instantly. Data
+                                    was stored in a database for future analysis, and users could replay pre-captured data for further investigation. For visualization, I implemented interactive charts using <b>WebEngine</b> and <b>CanvasJS</b>, where
+                                    data was directly fed from the C++ side to ensure high-performance rendering. This approach allowed the software to efficiently handle and display large datasets with thousands of points in real-time, ensuring fast
+                                    and smooth visualization for both online and offline analysis, even with multiple data channels on a single chart. Additionally, the software allowed users to create and transmit custom TX packets at predefined intervals,
+                                    either manually or by importing data from CSV files for automated transmission. Users could also configure custom channel IDs, labels, and equipment settings, selecting predefined parsers to process packets accordingly.
+                                    Many of the software’s features were inspired by Ballard Technology's Copilot software, ensuring a powerful and user-friendly experience for ARINC 429 data analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio Item -->
+
+
+
+                    <div class="col-lg-12 portfolio-item isotope-item filter-app project" data-aos="fade-up">
+                        <div id="DigitalCluster" class="project-wrap row">
+
+                            <div class="portfolio-details-slider swiper init-swiper col-lg-3 col-md-4 col-sm-6">
+
+                                <script type="application/json" class="swiper-config">
+                                    {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                            "delay": 5000
+                                        },
+                                        "slidesPerView": "auto",
+                                        "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "type": "bullets",
+                                            "clickable": true
+                                        }
+                                    }
+                                </script>
+
+                                <div class="swiper-wrapper align-items-center">
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Cluster/cluster0.JPG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Cluster/cluster1.JPG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Cluster/cluster2.JPG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/Cluster/cluster3.JPG" width="100%" alt="">
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+
+
+                            <!-- <img src="assets/img/HMIShell/hmiLauncherApp.PNG" class="project-img" alt=""> -->
+                            <div class="project-text col-lg-9 col-md-8 col-sm-6">
+                                <div class="project-text">
+                                    <a href="https://www.linkedin.com/posts/alirezajafari93_embeddedsystems-digitalinstrumentcluster-activity-7210764670960312320-mnki?utm_source=share&utm_medium=member_desktop" target="_blank">
+                                        <h3> Digital Instrument Cluster (2021)</h3>
+                                    </a>
+                                    <p></p>
+                                </div>
+                                <p>As the sole software developer for a cutting-edge digital instrument cluster project, I utilized Qt, QML, and C++ to design and develop a highly efficient and optimized application. Inspired by the sophisticated designs
+                                    of renowned car manufacturers like BMW and Mercedes-Benz, I created multiple themes to enhance the user experience. The design encompassed all aspects of a digital cluster, including Diagnostic (UDS), networking (OSEK-NM)
+                                    and other essential protocol implementations specific to each car manufacturer. The product was specifically tailored for the IKCO TARA, SAIPA SHAHIN/ ARIA vehicles integrating with their CAN matrix data. The application
+                                    achieved a remarkable 60 FPS on an embedded Linux running on a single core SOC, ensuring a smooth and responsive performance with fast boot times.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio Item -->
+
+
+
+
+                    <div class="col-lg-12 portfolio-item isotope-item filter-app project" data-aos="fade-up">
+                        <div id="HMIDesktop" class="project-wrap row">
+
+                            <div class="portfolio-details-slider swiper init-swiper col-lg-3 col-md-4 col-sm-6">
+
+                                <script type="application/json" class="swiper-config">
+                                    {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                            "delay": 5000
+                                        },
+                                        "slidesPerView": "auto",
+                                        "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "type": "bullets",
+                                            "clickable": true
+                                        }
+                                    }
+                                </script>
+
+                                <div class="swiper-wrapper align-items-center">
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/HMIShell/HMILauncherApp.PNG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/HMIShell/HMIQuickSettings.PNG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/HMIShell/HMITaskSwitch.PNG" width="100%" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/HMIShell/HMIFileBrowser.PNG" width="100%" alt="">
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+
+
+                            <!-- <img src="assets/img/HMIShell/hmiLauncherApp.PNG" class="project-img" alt=""> -->
+                            <div class="project-text col-lg-9 col-md-8 col-sm-6">
+                                <h3> HMI Launcher App (Desktop Environment) (2023)</h3>
+                                <p>As the sole software developer, I Development and design of a comprehensive launcher application for an embedded-Linux-based HMI, adhering to <b> XDG</b> specifications. Utilizing <b> QT, C++, QML,</b> and the <b> Wayland protocol</b>,
+                                    I engineered a robust windowing system, seamless task-switching capabilities and a full desktop environment. From scratch, I developed essential software components including a file browser, image viewer, text editor,
+                                    and settings manager. The launcher environment, designed to mirror the user-friendly experience of Android, featured quick settings, a search function, and a customizable home page.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Portfolio Section -->
+
+
+
+
+
+    </main>
+
+    <footer id="footer " class="footer position-relative light-background ">
+
+        <div class="container ">
+            <div class="copyright text-center ">
+                <p>© <span></span> <strong class="px-1 sitename ">Alireza Jafari</strong> <span></span></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
