@@ -1,0 +1,262 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{amsmath}
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+\usepackage{booktabs} 
+%debug page outer frames
+%\usepackage{showframe}
+
+\usepackage{xcolor} 
+% Define dark blue color
+\definecolor{darkblue}{rgb}{0.0, 0.2, 0.45}
+% Change the section format to bold and dark blue
+\usepackage{titlesec}
+% Change the section format to bold, dark blue, and larger font size
+\titleformat{\section}[block]{\bfseries\color{darkblue}\Large}{}{0em}{}[\titlerule]
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+\vspace*{-1.0cm} % Adjust the value as needed
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Alireza Jafari} \\[7.5pt]
+\textbf{Senior Software Engineer \quad | \quad Full Stack Developer \quad | \quad Senior C++ Engineer} \\[5pt]
+\midrule \\[-5pt]
+\href{https://www.github.com/arjafari93}{\raisebox{-0.05\height}\faGithub\ Github Profile } \ $|$ \ 
+\href{https://www.linkedin.com/in/alirezajafari93/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn Profile} \ $|$ \ 
+\href{https://alirezajafari.ir/}{\raisebox{-0.05\height}\faGlobe \ Website} \ $|$ \ 
+\href{mailto:alirezajafari28@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ alirezajafari28@gmail.com} \\
+\href{tel:+61-0447876134}{\raisebox{-0.05\height}\faMobile \ +61 447 876 134} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+
+Experienced Software Developer with 7+ years of expertise in \textbf{C++} development, specializing in \textbf{modern C++ standards, Qt, and QML}. Proven track record of designing and delivering complex applications across a range of industries, including embedded systems, medical devices, avionics, automotive, and more. Skilled in optimizing performance, debugging, and contributing to software architecture. Strong collaborative background working in fast-paced, multi-disciplinary teams.
+\section{Experience}
+
+September 2024 – January 2025\\
+\textbf{Senior C++ Developer at Graph Inc. (Full time)}
+\begin{itemize}
+    \item Worked as part of a professional \textbf{C++} team developing a Windows-based \textbf{EDR} (Endpoint Detection and Response) solution
+    \item Developed and integrated new features to enhance the product, including a rotation logger to buffer system data during offline periods, using encryption and compression to securely store logs on disk
+    \item Developed a parallel-threaded system to transmit buffered logs to the server using gRPC once connectivity was restored
+    \item Optimized performance and fixed critical bugs to improve system reliability and efficiency
+\end{itemize}
+
+\vspace{1.5em}
+February 2024 - April 2025\\
+\textbf{Senior Qt/C++ Developer at Med Fanavaran Plus (Part time)}
+\begin{itemize}
+    \item	Contributed to the development of a medical-grade \textbf{ultrasound sonography} imaging device as part of a collaborative engineering team.
+\item Involved in the design and development of various software functionalities
+\item Developed \textbf{touch panel} functionalities and \textbf{measurement}, requiring mathematical and geometric computations for accurate data processing and visualization
+\item Contributing to the overall software architecture and design.
+\item Using \textbf{Qt C++ and QML }extensively for development, with the core application 
+running on Qt Widgets
+\item Installed and configured a \textbf{self-hosted GitLab server} as version control,  improving team collaboration and development workflow.
+\end{itemize}
+\vspace{1.5em}
+Dec 2023 – May 2024\\
+\textbf{Qt/C++ Developer at Piaraz (Contractor)}
+\begin{itemize}
+    \item Sole \textbf{C++ }developer for a Qt-based application used with avionics hardware ( \textbf{ARINC 429} logger)
+    \item Delivered a complete software solution with \textbf{Modbus/TCP }communication for control and data analysis
+    \item Developed 50+ packet parsers to process received packets and display real-time parameter information.
+\end{itemize}
+\vspace{1.5em}
+Dec 2018 – Dec 2023\\
+\textbf{Software Developer at DevSpec (Full time)}
+\begin{itemize}
+    \item 	Primarily develop software using \textbf{Qt C++ and QML}, focusing on user-space applications for devices running embedded Linux
+\item Collaborate with a small team of specialists, each focusing on different layers including OS and hardware
+\item Worked on projects that required additional skills including HTML/CSS, Node.js, and Qt Widgets ... 
+  
+\end{itemize}
+
+
+
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+ \textbf{M.Sc in Electrical Engineering – Digital Electronics }     \hspace{2.7cm}      \small{2016 - 2018} 
+      
+      Amirkabir University of Technology, Tehran \\
+ \textbf{Thesis title}:  Video Stabilization and Image Enhancement in shaky video files\\    
+      %\hspace{10.9cm} 
+      \\
+      \hspace{12.3cm}  \\
+ \textbf{B.Sc in Electrical Engineering – Telecommunications}     \hspace{3.3cm}      \small{2011 - 2015} \hspace{0.5cm}    
+      
+     Isfahan University of Technology, Isfahan\\
+ \textbf{Thesis title }: GSM Packet Analysis Using Software Defined Radio (SDR) \\
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\textbf{Main Skills}
+\begin{itemize}
+  \item[-] \textbf{Modern C++ (11/14/17)}\\
+  \hspace*{1.5em} Multithreading, STL, Socket Programming, Lock-free Programming, OOP, SOLID, Patterns
+  \item[-] \textbf{Qt Framework}
+  \item[-] \textbf{QML}
+  \item[-] \textbf{Version Control} \\
+  \hspace*{1.5em}Git, GitLab, GitHub, Git Flow 
+  \item[-] \textbf{Unit Testing } \\
+  \hspace*{1.5em} Google Test
+\end{itemize}
+
+\textbf{Adaptable Skills}\\[0.7em]
+ C++20, Linux(UserSpace), JavaScript, Matlab, HTML/CSS, SQL, QMake, REST APIs, GLSL, YAML, SQLite, gRPC, winRPC, Named Pipe, Linux D-Bus, ZMQ, QWidget, Linux Kernel Space, Linux build systems (BuildRoot), Qt-Wayland, Node.js, Android, Google Test gMock, Jira, Confluence 
+
+%--------------------------------------------------
+%Projects
+%----------------------------------------------------------------------------------------
+\section{Notable Projects}
+
+\textbf{\large QBluePrint (2025) (open-source) \href{https://github.com/arjafari93/QBluePrint}{[GitHub]} \href{https://www.youtube.com/playlist?list=PLWlFycMes7_7DIiUJyj-BgJh1ARTclklZ}{[YouTube]}}\\[0.5em]
+A high-performance visual programming tool built with \textbf{Qt C++ and QML}, inspired by \textbf{Unreal Engine's Blueprint system}. It enables users to create complex logic flows using drag-and-drop nodes, including mathematical, logical, and IO operations (TCP/UDP, HTTP, file read/write, chart visualizations). It also supports a powerful scripting node that allows users to execute JavaScript at runtime for advanced data processing. Most blocks are modeled after Unreal Engine counterparts, and the system includes support for a custom recursive heterogeneous array type. Additional features include blueprint save/load (JSON), multi-page workspace, theme switching, zooming, and extensibility for future node types. This is an early-stage, fast-growing personal project developed in my spare time, and it is evolving rapidly with frequent feature additions and improvements.
+
+\vspace{0.5em}
+
+\textbf{\large Ultrasonography Imaging Software (2025)}\\[0.3em]
+Worked as a \textbf{Senior C++ developer} on an advanced ultrasound sonography imaging machine, using \textbf{Qt C++ and QML} for both UI and system-level development. Responsibilities included implementing measurement tools, touch panel features, and system integration. Developed over 500 measurement functions—including spline, trace, ellipse, angle, and volume tools—addressing complex \textbf{mathematical and geometrical} challenges to ensure medical-grade accuracy. Built a \textbf{custom virtual keyboard} from scratch with support for multiple pages, body labels, body markers, multilingual input, and other advanced features. Designed a \textbf{magnifier }tool to help clinicians place points with high precision. Most measurement and GUI elements were inspired by Philips ultrasound systems, resulting in a modern, user-friendly interface. Also contributed to several other components that enhanced overall system performance and usability.
+
+\vspace{0.5em}
+
+\textbf{\large HMI Launcher Desktop Environment (Industrial Tablet) (2023)}\\[0.3em]
+Sole developer of a comprehensive launcher application for an embedded Linux-based HMI, designed in full compliance with \textbf{XDG specifications}. Using \textbf{Qt, C++, QML}, and the \textbf{Wayland protocol}, I built a custom windowing system with robust task switching and a complete lightweight desktop environment. While some features were inspired by KDE Plasma, I studied its source code extensively to understand its design patterns; however, due to the heavy dependencies within KDE modules, direct integration was not feasible. As a result, the entire system was developed from scratch with \textbf{Qt as the only dependency}, ensuring minimal footprint and full control. Key applications—including a file browser, image viewer, text editor, and settings manager—were all built in-house. The launcher replicated the intuitive feel of an Android interface, offering features such as quick settings, global search, and a customizable home screen.
+\vspace{0.5em}
+
+\textbf{\large Custom HMI Designer for Embedded SoC (2023)}\\[0.3em]
+Designed and developed a lightweight visual design environment for a low-cost SoC-based HMI running customized embedded Linux, aimed at industrial use cases. The goal was to enable users—without programming knowledge—to create GUI screens and control logic, similar to tools like \textbf{Delta's DOPSoft}. I extended and customized the \textbf{Qt Designer} application by adding plugins for logic building and Modbus (serial) communication. Significant modifications were also made to Qt Designer’s core to adapt it to the project's constraints. On the HMI device, I developed a runtime application that could read, parse, and execute the GUI and logic files generated by the customized designer, enabling dynamic and responsive interface behavior directly on the device.
+
+\vspace{0.5em}
+
+\textbf{\large Avionics ARINC 429 Logger (2022)}\\[0.3em]
+As the sole developer, I created a comprehensive \textbf{Qt C++/QML} application for \textbf{ARINC 429} data analysis via Modbus TCP. The software, used with commercial avionics hardware and inspired by \textbf{Ballard’s CoPilot}, enabled full hardware configuration, IO management, and real-time parsing of over 50 ARINC 429 packet types. It featured interactive charting via Qt WebEngine and CanvasJS with high-performance C++ data feeds, supported packet replay and database logging, and allowed users to generate custom TX packets manually or through CSV import. Additionally, the application provided tools for defining channel mappings, equipment setup, and parser selection.
+\vspace{0.5em}
+
+\textbf{\large Digital Instrument Cluster (2021)}
+\href{https://www.linkedin.com/posts/alirezajafari93_embeddedsystems-digitalinstrumentcluster-activity-7210764670960312320-mnki?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoucmQBOhJKBdzhjUQFFI8XdLiMFcObn3M}{(Video)}\\[0.3em]
+As the sole software developer for a modern digital instrument cluster, I designed and implemented a high-performance application using \textbf{Qt, QML, and C++}. Drawing inspiration from premium automotive brands like BMW and Mercedes-Benz, I developed multiple user-selectable themes to deliver a polished and intuitive experience. The system covered all core functionalities of a digital cluster, including diagnostic support via UDS, OSEK-NM networking, and manufacturer-specific protocol integrations. The final product was tailored for IKCO TARA and SAIPA SHAHIN/ARIA vehicles, interfacing with their CAN matrix data. Despite running on a single-core SoC under embedded Linux, the application consistently achieved 60 FPS with fast boot times, demonstrating its optimization and responsiveness. This project was also recognized in the prestigious Khwarizmi Youth Award competition under the Practical Innovation category.
+
+\vspace{0.6em}
+\noindent\fontsize{13pt}{15pt}\selectfont
+\textit{\textbf{*} More details and visual examples of my projects are available on my website:} \href{https://alirezajafari.ir/}{\textbf{https://alirezajafari.ir}}
+
+
+\end{document}
