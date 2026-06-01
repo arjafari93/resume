@@ -132,20 +132,46 @@
 \midrule \\[-5pt]
 \href{https://www.github.com/arjafari93}{\raisebox{-0.05\height}\faGithub\ Github Profile } \ $|$ \ 
 \href{https://www.linkedin.com/in/alirezajafari93/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn Profile} \ $|$ \ 
-\href{https://alirezajafari.ir/}{\raisebox{-0.05\height}\faGlobe \ Website} \ $|$ \ 
+\href{https://arjafari93.github.io/resume/}{\raisebox{-0.05\height}\faGlobe \ Website} \ $|$ \ 
 \href{mailto:alirezajafari28@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ alirezajafari28@gmail.com} \\
 \href{tel:+61-0447876134}{\raisebox{-0.05\height}\faMobile \ +61 447 876 134} \\
 \end{tabularx}
 
+%Interests/ Keywords/ Summary
+
+Experienced Software Developer with 8+ years of expertise in \textbf{C++} development, specializing in \textbf{modern C++ standards, Qt, and QML}. Proven track record of designing and delivering complex applications across a range of industries, including embedded systems, medical devices, avionics, automotive, and more. Skilled in optimizing performance, debugging, and contributing to software architecture. Strong collaborative background working in fast-paced, multi-disciplinary teams.
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\textbf{Main Skills}
+\begin{itemize}
+  \item[-] \textbf{Modern C++ (11/14/17)}\\
+  \hspace*{1.5em} Multithreading, STL, Socket Programming, Lock-free Programming, OOP, SOLID, Patterns
+  \item[-] \textbf{Qt Framework}
+  \item[-] \textbf{QML}
+  \item[-] \textbf{Version Control} \\
+  \hspace*{1.5em}Git, GitLab, GitHub, Git Flow 
+\end{itemize}
+
+\textbf{Adaptable Skills}\\[0.7em]
+ C++20, Unit Testing (google test) Linux(UserSpace), JavaScript, Matlab, HTML/CSS, SQL, QMake, REST APIs, GLSL, YAML, SQLite, gRPC, winRPC, Named Pipe, Linux D-Bus, ZMQ, QWidget, Linux Kernel Space, Linux build systems (BuildRoot), Qt-Wayland, Node.js, Android, Google Test gMock, Jira, Confluence, Jenkins, Docker
+
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-
-Experienced Software Developer with 7+ years of expertise in \textbf{C++} development, specializing in \textbf{modern C++ standards, Qt, and QML}. Proven track record of designing and delivering complex applications across a range of industries, including embedded systems, medical devices, avionics, automotive, and more. Skilled in optimizing performance, debugging, and contributing to software architecture. Strong collaborative background working in fast-paced, multi-disciplinary teams.
 \section{Experience}
 
+June 2025 – Present \hspace{2em} Brisbane, QLD, Australia\\
+\textbf{Software Engineer at TOPCON Positioning Systems (Full-time)}
+\begin{itemize}
+    \item Member of the \textbf{Platform Integration Team}, contributing to cross-platform software development across \textbf{embedded Linux}, \textbf{iOS}, and \textbf{Android}
+\item Develop and maintain platform-level features using \textbf{C++}, \textbf{Qt (QML)}, and \textbf{CMake}, leveraging \textbf{Docker}-based workflows for reproducible builds and consistent development environments
+\item Primary maintainer of the \textbf{GX-90}, an embedded Linux device built on \textbf{Qt Application Manager} and \textbf{Qt Wayland}, developing new features and resolving defects using \textbf{C++} and \textbf{QML}
+\end{itemize}
+
+\vspace{1.5em}
 September 2024 – January 2025\\
 \textbf{Senior C++ Developer at Graph Inc. (Full time)}
 \begin{itemize}
@@ -160,28 +186,19 @@ February 2024 - April 2025\\
 \textbf{Senior Qt/C++ Developer at Med Fanavaran Plus (Part time)}
 \begin{itemize}
     \item	Contributed to the development of a medical-grade \textbf{ultrasound sonography} imaging device as part of a collaborative engineering team.
-\item Involved in the design and development of various software functionalities
 \item Developed \textbf{touch panel} functionalities and \textbf{measurement}, requiring mathematical and geometric computations for accurate data processing and visualization
-\item Contributing to the overall software architecture and design.
 \item Using \textbf{Qt C++ and QML }extensively for development, with the core application 
 running on Qt Widgets
 \item Installed and configured a \textbf{self-hosted GitLab server} as version control,  improving team collaboration and development workflow.
 \end{itemize}
+
 \vspace{1.5em}
-Dec 2023 – May 2024\\
-\textbf{Qt/C++ Developer at Piaraz (Contractor)}
-\begin{itemize}
-    \item Sole \textbf{C++ }developer for a Qt-based application used with avionics hardware ( \textbf{ARINC 429} logger)
-    \item Delivered a complete software solution with \textbf{Modbus/TCP }communication for control and data analysis
-    \item Developed 50+ packet parsers to process received packets and display real-time parameter information.
-\end{itemize}
-\vspace{1.5em}
-Dec 2018 – Dec 2023\\
+Dec 2018 – Jul 2024\\
 \textbf{Software Developer at DevSpec (Full time)}
 \begin{itemize}
     \item 	Primarily develop software using \textbf{Qt C++ and QML}, focusing on user-space applications for devices running embedded Linux
 \item Collaborate with a small team of specialists, each focusing on different layers including OS and hardware
-\item Worked on projects that required additional skills including HTML/CSS, Node.js, and Qt Widgets ... 
+\item Worked on projects that required additional skills including HTML/CSS, Node.js, and Qt Widgets
   
 \end{itemize}
 
@@ -201,26 +218,7 @@ Dec 2018 – Dec 2023\\
  \textbf{B.Sc in Electrical Engineering – Telecommunications}     \hspace{3.3cm}      \small{2011 - 2015} \hspace{0.5cm}    
       
      Isfahan University of Technology, Isfahan\\
- \textbf{Thesis title }: GSM Packet Analysis Using Software Defined Radio (SDR) \\
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\textbf{Main Skills}
-\begin{itemize}
-  \item[-] \textbf{Modern C++ (11/14/17)}\\
-  \hspace*{1.5em} Multithreading, STL, Socket Programming, Lock-free Programming, OOP, SOLID, Patterns
-  \item[-] \textbf{Qt Framework}
-  \item[-] \textbf{QML}
-  \item[-] \textbf{Version Control} \\
-  \hspace*{1.5em}Git, GitLab, GitHub, Git Flow 
-  \item[-] \textbf{Unit Testing } \\
-  \hspace*{1.5em} Google Test
-\end{itemize}
-
-\textbf{Adaptable Skills}\\[0.7em]
- C++20, Linux(UserSpace), JavaScript, Matlab, HTML/CSS, SQL, QMake, REST APIs, GLSL, YAML, SQLite, gRPC, winRPC, Named Pipe, Linux D-Bus, ZMQ, QWidget, Linux Kernel Space, Linux build systems (BuildRoot), Qt-Wayland, Node.js, Android, Google Test gMock, Jira, Confluence 
+ \textbf{Thesis title }: GSM Packet Analysis Using Software Defined Radio (SDR) 
 
 %--------------------------------------------------
 %Projects
@@ -256,7 +254,8 @@ As the sole software developer for a modern digital instrument cluster, I design
 
 \vspace{0.6em}
 \noindent\fontsize{13pt}{15pt}\selectfont
-\textit{\textbf{*} More details and visual examples of my projects are available on my website:} \href{https://alirezajafari.ir/}{\textbf{https://alirezajafari.ir}}
+\textit{\textbf{*} More details and visual examples of my projects are available on my website:} \\
+\href{https://arjafari93.github.io/resume/}{\textbf{https://arjafari93.github.io/resume/}}
 
 
 \end{document}
